@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SendMessController">
+            <connections>
+                <outlet property="detImage" destination="OrE-Dp-Asg" id="V4F-jf-CLP"/>
+                <outlet property="titLab" destination="0gi-zZ-2Km" id="8rt-aQ-MMd"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="天气预报短信定制方式" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0gi-zZ-2Km">
+                    <rect key="frame" x="0.0" y="80" width="414" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Nf6-i9-lkx"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="messImage" translatesAutoresizingMaskIntoConstraints="NO" id="OrE-Dp-Asg">
+                    <rect key="frame" x="8" y="138" width="399" height="224"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="OrE-Dp-Asg" secondAttribute="height" multiplier="399:275" constant="73.99636363636364" id="WiV-TU-780"/>
+                        <constraint firstAttribute="width" secondItem="OrE-Dp-Asg" secondAttribute="height" multiplier="384:221" id="oCv-jv-tXR"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="oCv-jv-tXR"/>
+                        </mask>
+                    </variation>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="0gi-zZ-2Km" secondAttribute="trailing" id="EdX-EF-5Vy"/>
+                <constraint firstItem="OrE-Dp-Asg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="FUj-UV-IOe"/>
+                <constraint firstAttribute="trailing" secondItem="OrE-Dp-Asg" secondAttribute="trailing" constant="7" id="G2v-S1-KPz"/>
+                <constraint firstItem="0gi-zZ-2Km" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Osp-RN-hPx"/>
+                <constraint firstItem="OrE-Dp-Asg" firstAttribute="top" secondItem="0gi-zZ-2Km" secondAttribute="bottom" constant="8" id="RVt-ja-jwx"/>
+                <constraint firstItem="0gi-zZ-2Km" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="UgO-mx-Ir9"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="messImage" width="458" height="213"/>
+    </resources>
+</document>
